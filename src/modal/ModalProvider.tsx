@@ -31,7 +31,7 @@ export function ModalProvider(props: ModalContextProps) {
   return (
     <ModalContext.Provider value={modalActions}>
       {children}
-      <ContactModal open={modalOpen} />
+      <ContactModal open={modalOpen} onClose={closeModal} />
     </ModalContext.Provider>
   );
 }

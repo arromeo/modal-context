@@ -8,10 +8,8 @@ import Typography from '@material-ui/core/Typography';
 type ContactModalProps = DialogProps;
 
 function ContactModal(props: ContactModalProps) {
-  const { open } = props;
-
   return (
-    <Dialog open={open}>
+    <Dialog {...props}>
       <DialogTitle>Contact info</DialogTitle>
       <Typography>Some contact info goes here</Typography>
     </Dialog>
